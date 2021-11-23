@@ -16,9 +16,10 @@ Including another URL conf
 from django.contrib import admin
 from django.urls import path, include
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
-    path('honor/', include('honor.urls')),
-    path('news/', include('news.urls')),
+    path('', include('honor.urls')),
+    path('', include('news.urls')),
 ]
