@@ -12,3 +12,6 @@ class News(models.Model):
     is_published_comments = models.BooleanField(default=True)
     is_published = models.BooleanField(default=True)
 
+    def __str__(self):
+        return self.title
+

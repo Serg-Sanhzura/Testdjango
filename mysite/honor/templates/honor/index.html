@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+<h1>{{ title }}</h1>
+{% for item in honor %}
+<div>
+    <p>{{ item.title }}</p>
+    <p>{{ item.name }} {{item.surname }}</p>
+    <p>{{ item.position }}</p>
+    <p>{{ item.rank }}</p>
+    <p>{{ item.content }}</p>
+    <hr>
+</div>
+{% endfor %}
+</body>
+</html>
