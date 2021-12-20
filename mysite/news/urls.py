@@ -3,5 +3,7 @@ from .views import *
 
 
 urlpatterns = [
-    path('news/', index)
+    path('news/', index, name='news'),
+    path('category/<int:category_id>/', get_category, name='category'),
 ]
+

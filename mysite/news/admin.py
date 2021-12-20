@@ -1,6 +1,7 @@
 from django.contrib import admin
 
-from .models import News, Category, Comments
+from .models import News, Category
+from .models import Comments
 
 
 class NewsAdmin(admin.ModelAdmin):
